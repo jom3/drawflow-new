@@ -1,1 +1,7 @@
 <div #drawflowEditor id="drawflow" style="width:100%; height:500px;"></div>
+<div class="toolbar">
+  <button (click)="zoomIn()">➕ Zoom +</button>
+  <button (click)="zoomOut()">➖ Zoom -</button>
+  <button (click)="resetZoom()">🔄 Reset</button>
+  <span class="zoom-label">Zoom: {{ zoomLevel }}%</span>
+</div>
