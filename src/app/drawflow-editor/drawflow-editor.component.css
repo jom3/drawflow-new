@@ -1,0 +1,201 @@
+/* Contenedor azul opcional */
+.drawflow .drawflow-node.if {
+  background: transparent !important;
+  border: none;
+  box-shadow: none;
+}
+
+/* Forma del rombo */
+.node-if .diamond {
+  width: 80px;
+  height: 80px;
+  background: steelblue;
+  transform: rotate(45deg);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border: 2px solid #333;
+  font-weight: bold;
+}
+
+.node-if .diamond p {
+  transform: rotate(-45deg);
+  margin: 0;
+}
+
+/* Coloca los puertos */
+.drawflow .drawflow-node.if .input {
+  left: 80px;
+  top: -62px; /* Ajusta según tamaño de la figura */
+  transform: translateX(-50%);
+  background-color: greenyellow;
+  border: 1px solid green;
+}
+
+
+.drawflow .drawflow-node.if .outputs .output:nth-child(1) {
+  left: -151px;
+  top: 3px;
+  transform: translateY(70%);
+  background-color: steelblue;
+  border: 1px solid blue;
+}
+
+.drawflow .drawflow-node.if .outputs .output:nth-child(2) {
+  right: 21px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: steelblue;
+  border: 1px solid blue;
+}
+
+.drawflow .drawflow-node .input,
+.drawflow .drawflow-node .output {
+  width: 10px !important;   /* valor por defecto es 20px */
+  height: 10px !important;
+}
+
+/* Bordes más delgados opcionales */
+.drawflow .drawflow-node .input,
+.drawflow .drawflow-node .output {
+  border: 1px solid #000;
+}
+
+/* Asegura forma circular */
+.drawflow .drawflow-node .input,
+.drawflow .drawflow-node .output {
+  border-radius: 50%;
+}
+
+
+.drawflow .connection .main-path {
+  stroke: black;
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+}
+
+
+/* Nodo general */
+.drawflow .drawflow-node.editable {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+/* Contenedor del nodo */
+.custom-node {
+  width: 180px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border: 1px solid #ccc;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+  cursor: default;
+}
+
+/* Encabezado editable */
+.custom-header {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  outline: none;
+}
+
+/* Cuerpo */
+.custom-body {
+  padding: 8px;
+  font-size: 13px;
+  color: #333;
+  text-align: center;
+}
+
+/* Tamaño de los puertos */
+.drawflow .drawflow-node.editable .input,
+.drawflow .drawflow-node.editable .output {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #4caf50;
+  border: 1px solid #2e7d32;
+}
+
+/* Quad nodos*/
+
+/* Limpia el estilo base */
+.drawflow .drawflow-node.multi {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+/* Caja principal del nodo */
+.quad-node {
+  width: 120px;
+  height: 120px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  text-align: center;
+}
+
+/* Texto editable */
+.quad-label {
+  padding: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+}
+
+/* PUERTOS PERSONALIZADOS */
+
+/* Entrada: arriba centrado */
+.drawflow .drawflow-node.multi .input {
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Salida 1: derecha */
+.drawflow .drawflow-node.multi .outputs .output:nth-child(1) {
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Salida 2: abajo */
+.drawflow .drawflow-node.multi .outputs .output:nth-child(2) {
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Salida 3: izquierda */
+.drawflow .drawflow-node.multi .outputs .output:nth-child(3) {
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Estilo de los puntos */
+.drawflow .drawflow-node.multi .input,
+.drawflow .drawflow-node.multi .output {
+  width: 10px;
+  height: 10px;
+  background: #2196f3;
+  border: 1px solid #0d47a1;
+  border-radius: 50%;
+}
+
